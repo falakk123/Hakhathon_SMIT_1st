@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+  <style>
+    .slider {
+      width: 200%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <svg width="89" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#404145">
+              <path
+                d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z">
+              </path>
+            </g>
+            <g fill="#1dbf73">
+              <path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z"></path>
+            </g>
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Business Solutions
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><strong>FIverr Pro</strong></a></li>
+                <li><a class="dropdown-item" href="#">Top freelancers and proffessional bussiness tools<br> for any
+                    project</a></li>
+
+                <br class="dropdown-divider" />
+                <li>
+                  <a class="dropdown-item" href="#"><strong>Fiver Cirtified</strong></a>
+                </li>
+                <li><a class="dropdown-item" href="#">Your own Branded MarketPlace of cirtified<br>experts</a></li>
+
+                <br class="dropdown-divider" />
+                <li>
+                  <a class="dropdown-item" href="#"><strong>Fiver EnterPrice</strong></a>
+                </li>
+                <li><a class="dropdown-item" href="#">SaaS to manage your freelance Workforce and<br>onboard additional
+                    talent</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Explore
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"><strong>Discover</strong></a></li>
+                <li><a class="dropdown-item" href="#">Inspiring projects made on Fiverr</a></li>
+                <br class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><strong>Community</strong></a>
+            <li><a class="dropdown-item" href="#">Connect with Fiverr’s team and community</a></li>
+            <br class="dropdown-divider"></li>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><strong>Podcast</strong></a>
+            <li><a class="dropdown-item" href="#">In-depth guides covering business topics</a></li>
+            <br class="dropdown-divider"></li>
+            </li>
+
+
+            <li>
+              <a class="dropdown-item" href="#"><strong>Learn</strong></a>
+            <li><a class="dropdown-item" href="#">Professional online courses, led by experts</a></li>
+            <br class="dropdown-divider"></li>
+            </li>
+
+            <li>
+              <a class="dropdown-item" href="#"><strong>Blog</strong></a>
+            <li><a class="dropdown-item" href="#">News, information and community stories</a></li>
+            <br class="dropdown-divider"></li>
+            </li>
+
+
+            <li>
+              <a class="dropdown-item" href="#"><strong>Fiverr Workspace</strong></a>
+            <li><a class="dropdown-item" href="#">One place to manage your business </a></li>
+            <br class="dropdown-divider"></li>
+            </li>
+          </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe2"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+              </svg>
+              English</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Become a Seller</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SignIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              <button class="btn btn-outline-success" type="Join">Join</button>
+            </a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide bg-success" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active ">
+          <div class="container-fluid text-right text-white">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-6 pt-5">
+                <h1><strong>Find the right <i class="italic"
+                      style="font-family: 'Times New Roman', Times, serif; font-weight: 100;">freelance</i> service,
+                    right
+                    away</strong></h1>
+
+                <div class="input-group pt-4">
+                  <input type="text" class="form-control" aria-label="Search for any service"
+                    placeholder="Search for any service">
+                  <span class="input-group-text"
+                    style="color: white; border-color: rgb(14, 62, 14); background: rgb(14, 62, 14);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="16" fill="currentColor"
+                      class="bi bi-search" viewBox="0 0 16 16">
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                  </span>
+                </div>
+
+
+                <div class="pt-4">
+                  <strong>Peoples:</strong>
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>Website Design</strong>
+                  </button>
+
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>WordPress</strong>
+                  </button>
+
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>Logo Design</strong>
+                  </button>
+
+
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>Al Service </strong>
+                  </button>
+
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="./Image/scr4-removebg-preview.png" class="slider img-fluid" alt="...">
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-color: orangered;">
+          <div class="container-fluid text-right text-white">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-6 pt-5">
+                <h1><strong>Find the right <i class="italic"
+                      style="font-family: 'Times New Roman', Times, serif; font-weight: 100;">freelance</i> service,
+                    right
+                    away</strong></h1>
+
+                <div class="input-group pt-3">
+                  <input type="text" class="form-control" aria-label="Search for any service"
+                    placeholder="Search for any service">
+                  <span class="input-group-text"
+                    style="color: white; border-color: rgb(14, 62, 14); background: rgb(14, 62, 14);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="16" fill="currentColor"
+                      class="bi bi-search" viewBox="0 0 16 16">
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                  </span>
+                </div>
+
+
+                <div class="pt-3">
+                  <strong>Peoples:</strong>
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>Website Design</strong>
+                  </button>
+
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>WordPress</strong>
+                  </button>
+
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>Logo Design</strong>
+                  </button>
+
+
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>Al Service </strong>
+                  </button>
+
+                </div>
+              </div>
+              <div class="col-6">
+                <img src="./Image/scr2-removebg-preview.png" class="slider img-fluid" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-color: purple;">
+          <div class="container-fluid text-right text-white">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-6 pt-5">
+                <h1><strong>Find the right <i class="italic"
+                      style="font-family: 'Times New Roman', Times, serif; font-weight: 100;">freelance</i> service,
+                    right
+                    away</strong></h1>
+
+                <div class="input-group pt-3">
+                  <input type="text" class="form-control" aria-label="Search for any service"
+                    placeholder="Search for any service">
+                  <span class="input-group-text"
+                    style="color: white; border-color: rgb(14, 62, 14); background: rgb(14, 62, 14);">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="16" fill="currentColor"
+                      class="bi bi-search" viewBox="0 0 16 16">
+                      <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                  </span>
+                </div>
+
+
+                <div class="pt-3">
+                  <strong>Peoples:</strong>
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>Website Design</strong>
+                  </button>
+
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>WordPress</strong>
+                  </button>
+
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>Logo Design</strong>
+                  </button>
+
+
+                  <button type="button" class="btn btn-outline-light ms-3"
+                    style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; border-radius: 8px;">
+                    <strong>Al Service </strong>
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="col-6">
+                <img src="./Image/scr5-removebg-preview.png" class="slider img-fluid" alt="...">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="img-fluid" style="width: 100%;">
+      <Img class="img-fluid" src="./Image/Capture12.JPG" alt="">
+    </div>
+
+    <div class="container-fluid pt-5">
+      <h2 class="text-seccondary">Popular services</h2>
+    </div>
+
+
+    <div id="carouselExample" class="carousel carousel-dark slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active container-fluid text-right pt-3">
+          <div class="row">
+
+            <div class="col">
+              <div class="card text-bg-light text-white">
+                <img
+                  src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/7ead3b2056987e6fa3aad69cf897a50b-1690383161247/ai-artists-2x.png"
+                  class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <small class="card-text">Ad talent to AI</small>
+                  <h5>AI Artist</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card text-bg-light text-white">
+                <img
+                  src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/7ead3b2056987e6fa3aad69cf897a50b-1690383161257/logo-design-2x.png"
+                  class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <small class="card-text">Build Your Brand</small>
+                  <h5>Logo Design</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card text-bg-light text-white">
+                <img
+                  src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/7ead3b2056987e6fa3aad69cf897a50b-1690383161257/wordpress-2x.png"
+                  class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <small class="card-text">Custamize Your Site</small>
+                  <h5>Word Press</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card text-bg-light text-white">
+                <img
+                  src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/7ead3b2056987e6fa3aad69cf897a50b-1690383161253/voice-over-2x.png"
+                  class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <small class="card-text">Share Your Message</small>
+                  <h5>Voice Over</h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card text-bg-light text-white">
+                <img
+                  src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/7ead3b2056987e6fa3aad69cf897a50b-1690383161245/animated-explainer-2x.png"
+                  class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <small class="card-text">Engage Your Audience</small>
+                  <h5>Video Explainer</h5>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+          <!-- <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="col">
+                  <div class="card text-bg-light text-white">
+                    <img
+                      src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_255,dpr_1.0/v1/attachments/generic_asset/asset/7ead3b2056987e6fa3aad69cf897a50b-1690383161247/ai-artists-2x.png"
+                      class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                      <small class="card-text">Ad talent to AI</small>
+                      <h5>AI Artist</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- <div class="carousel-item">
+            Arif
+          </div> -->
+
+
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="shadow carousel-control-prev-icon" aria-hidden="true"
+          style="border-radius: 20px; margin-right: 120px;"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="margin-left: 120px;"></span>
+        <span class=" visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="pt-5">
+      <div class="container-fluid pt-5 mt-3" style="background-color: rgb(191, 218, 227);">
+        <div class="container-fluid text-right">
+          <div class="row justify-content-start">
+            <div class="col-6" style="line-height: 100%;">
+              <h3><strong>The best part? Everything.</strong></h3>
+              <br>
+              <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-check-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                </svg>
+                Stick to your budget</h6>
+              <p>
+                Find the right service for every price point. No<br> hourly rates, just project-based pricing.
+              </p>
+              <br>
+              <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-check-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                </svg>
+                Get quality work done quickly</h6>
+              <p>Hand your project over to a talented freelancer in<br> minutes, get long-lasting results</p>
+              <br>
+              <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-check-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                </svg>
+                Pay when you're happy</h6>
+              <p>
+                Upfront quotes mean no surprises. Payments only<br> get released when you approve.
+              </p>
+              <br>
+              <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-check-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                  <path
+                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                </svg>
+                Count on 24/7 support</h6>
+              <p>
+                Our round-the-clock support team is available to help <br>anytime, anywhere.
+              </p>
+            </div>
+            <div class="col-6">
+              <iframe width="500" height="380" src="https://www.youtube.com/embed/xVZqEmRQjLM?si=lH7NJqSItpWUdc7I"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="margin-top: 20px; margin-bottom: 40px;"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container-fluid pt-5">
+        <h3><strong class="my-5 mx-3">You need it, we've got it</strong></h3>
+      </div>
+
+
+      <div class="container text-center my-5">
+        <div class="img-fluid row mt-5">
+          <div class="col">
+            <img width="20%" height="40vh" src="./Image/icon2.png" alt="">
+            <center>
+              <hr class="line-height">
+            </center>
+            <small>Graphics & Design</small>
+          </div>
+          <div class="col">
+            <img width="30%" height="40vh"
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/online-marketing.a3e9794.svg"
+              alt="">
+            <center>
+              <hr class="line-height">
+            </center>
+            <small>online-marketing</small>
+          </div>
+          <div class="col">
+            <img width="30%" height="40vh"
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/writing-translation.a787f2f.svg"
+              alt="">
+            <center>
+              <hr class="line-height">
+            </center>
+            <small>writing-translation</small>
+          </div>
+          <div class="col">
+            <img width="30%" height="40vh"
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/video-animation.1356999.svg"
+              alt="">
+            <center>
+              <hr class="line-height">
+            </center>
+            <small>video-animation</small>
+          </div>
+          <div class="col">
+            <img width="30%" height="40vh"
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/music-audio.ede4c90.svg"
+              alt="">
+            <center>
+              <hr class="line-height">
+            </center>
+            <small>music-audio</small>
+          </div>
+        </div>
+
+        <div class="row my-5 mb-5">
+          <div class="col">
+            <img width="30%" height="40vh"
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/programming.6ee5a90.svg"
+              alt="">
+            <center>
+              <hr class="line-height">
+            </center>
+            <small>programming</small>
+          </div>
+          <div class="col">
+            <img width="30%" height="40vh"
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/business.fabc3a7.svg"
+              alt="">
+            <center>
+              <hr class="line-height">
+            </center>
+            <small>business</small>
+          </div>
+          <div class="col">
+            <img width="30%" height="40vh"
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/lifestyle.112b348.svg"
+              alt="">
+            <center>
+              <hr class="line-height">
+            </center><small>Lifestyle</small>
+          </div>
+          <div class="col">
+            <img width="30%" height="40vh"
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/data.855fe95.svg"
+              alt="">
+            <center>
+              <hr class="line-height">
+            </center><small>data</small>
+          </div>
+          <div class="col">
+            <img width="30%" height="40vh"
+              src="https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/photography.0cf5a3f.svg"
+              alt="" class="img-fluid">
+            <center>
+              <hr class="line-height" loading="lazy">
+            </center>
+            <small>photography</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid" style="background-color: #0d084d;">
+        <div class="container-fluid text-right pt-5 mt-5">
+          <div class="row justify-content-start">
+            <div class="col-6">
+              <div> <img
+                  src="https://github.com/Fasiha-Mariyam/fiverr_clone/blob/main/images/fiverr_business.png?raw=true"
+                  alt="" class="img-fluid">
+              </div><br>
+              <div class="text-white" style="line-height: 70%;">
+                <h3>Advanced solutions and professional talent for businesses</h3>
+                <br>
+
+                <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                      d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                  </svg> Fiverr Pro</h6>
+                <p><small> Access top freelancers and professional business tools for any project</small></p>
+
+                <br>
+                <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                      d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                  </svg> Fiverr Certified</h6>
+                <p><small> Build your own branded marketplace of certified experts</small></p><br>
+                <h6><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path
+                      d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                  </svg> Fiverr Enterprise</h6>
+                <p><small>Manage your freelance workforce and onboard additional talent with an end-to-end SaaS
+                    solution</small></p>
+              </div>
+            </div>
+
+
+
+
+            <div class="col-6">
+              <img width="90%" height="200vh"
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_1.0/v1/attachments/generic_asset/asset/51c35c7cecf75e6a5a0110d27909a2f5-1690202609364/EN.png"
+                alt="" class="img-fluid ms-5 mt-5 mb-5" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-5">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+
+              <div class="container-fluid text-center">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img class="img-fluid ms-3 mt-3 mb-3"
+                      src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_460,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173414/testimonial-video-still-naadam.jpg"
+                      alt="">
+                  </div>
+                  <div class="col-md-6 my-5">
+                    <div class="d-flex">
+                      <div class="fs-5 text-secondary"> Caitlin Tormey,Chief Commercial Officer |</div>
+                      <h4 class="mx-1">NAADAM</h4>
+                    </div>
+                    <img class="mt-3 img-fluid"
+                      src="https://github.com/Fasiha-Mariyam/fiverr_clone/blob/main/images/content.png?raw=true" alt="">
+                  </div>
+                </div>
+
+              </div>
+              <div class="carousel-item">
+                <!-- <div class="col-md-6">
+                  <img class="img-fluid ms-3 mt-3 mb-3"
+                    src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_460,dpr_1.0/v1/attachments/generic_asset/asset/42a6fd208670a0361b38bd72b47b9317-1599519173414/testimonial-video-still-naadam.jpg"
+                    alt="">
+                </div>
+                <div class="col-md-6 my-5">
+                  <div class="d-flex">
+                    <div class="fs-5 text-secondary"> Caitlin Tormey,Chief Commercial Officer |</div>
+                    <h4 class="mx-1">NAADAM</h4>
+                  </div>
+                  <img class="mt-5 img-fluid"
+                    src="" alt="">
+                </div> -->
+              </div>
+              <div class="carousel-item">
+                <!-- <div class="col-md-6">
+                  <img class="img-fluid ms-3 mt-3 mb-3"
+                    src=""
+                    alt="">
+                </div>
+                <div class="col-md-6 my-5">
+                  <div class="d-flex">
+                    <div class="fs-5 text-secondary"> Caitlin Tormey,Chief Commercial Officer |</div>
+                    <h4 class="mx-1">NAADAM</h4>
+                  </div>
+                  <img class="mt-5 img-fluid"
+                    src="https://github.com/Fasiha-Mariyam/fiverr_clone/blob/main/images/content.png?raw=true" alt="">
+                </div> -->
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="container-fluid ms-3 pt-4">
+          <div class="container-fluid row logomaker">
+            <div class="col-md-6 mb-3">
+              <img class="mt-5 mb-3"
+                src="https://github.com/Fasiha-Mariyam/fiverr_clone/blob/main/images/logo.png?raw=true" alt="">
+              <h1 class="text-white">Make an incredible logo <i>in minutes</i></h1>
+              <p class="text-white">Pre-designed by top talent. Just add your touch.</p>
+              <button type="button" class="btn btn-light my-3" style="color:#446ee7 ;">Try Fiverr Logo Maker</button>
+            </div>
+            <div class="col-md-6 logo-img mb-3">
+              <img width="180%" height="97%"
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1160,dpr_1.0/v1/attachments/generic_asset/asset/b49b1963f5f9008f5ff88bd449ec18f7-1608035772453/logo-maker-banner-wide-desktop-1352-2x.png"
+                alt="">
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="my-5 work">
+          <h2 class="mx-5 pt-2 mt-2">Inspiring work made on Fiverr</h2>
+          <div class="d-flex justify-content-around my-5">
+            <div class="card" style="width: 18rem;">
+              <img height="100%"
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615063/bruno_malagrino.png"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Logo Design</h5>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/aa2ff6a65708e858cd563bedbc1f9e48-1617004762616/spickex.jpeg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Flyer Design</h5>
+
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img height="100%"
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615063/annapietrangeli.jpeg"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Book Design</h5>
+              </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+              <img height="100%"
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_320,dpr_1.0/v1/attachments/generic_asset/asset/f23a46693ef0e611430e232cbc989e2b-1617004615082/christophbrandl.png"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Illustration</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class=" my-5 ">
+          <h1 class="mx-5 pt-4">Guides to help you grow</h1>
+          <div class="shadow d-flex justify-content-around my-5">
+            <div class="shadow mx-2 ms-5">
+              <img class="img-fluid"
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_600,dpr_1.0/v1/attachments/generic_asset/asset/0c7c1b07050e6ea2a0901861b48b6264-1658846941284/side%20hustle.jpeg"
+                alt="">
+              <div>
+                <p class="fs-6 fw-bold">Start a side business</p>
+              </div>
+            </div>
+            <div class="shadow mx-2">
+              <img class="img-fluid"
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_600,dpr_1.0/v1/attachments/generic_asset/asset/687d698a96f4eef875648319685ffeed-1687027332007/1685561103924-12profitableecommercebusinessideasyoucanstarttoday.jpg"
+                alt="">
+              <div>
+                <p class="fs-6 fw-bold">Ecommerce business Ideas</p>
+              </div>
+            </div>
+            <div class="shadow mx-2 me-5">
+              <img class="img-fluid"
+                src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_600,dpr_1.0/v1/attachments/generic_asset/asset/5907f56b0e099c84efe5f480840f43a2-1593446948907/home%20based%20online%20business-fiverr.jpg"
+                alt="">
+              <div>
+                <p class="fs-6 fw-bold">Start an online business and work from home</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="JoinFiverr text-white">
+          <div class="container-fluid">
+            <img width="100%"
+              src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_1400,dpr_1.0/v1/attachments/generic_asset/asset/50218c41d277f7d85feeaf3efb4549bd-1599072608122/bg-signup-1400-x1.png"
+              alt="" class="img-fluid">
+            <h1 class="container join">Suddenly it's all so <i>doable.</i></h1>
+            <button type="button" class="btn btn-success fw-bold mt-5 px-4 py-2 ms-5">Join Fiverr</button>
+          </div>
+        </div>
+
+
+
+        <footer class="mt-5 pt-5">
+          <hr>
+          <div class="d-flex justify-content-between mx-5">
+            <div>
+              <ul class="list-group">
+                <li class="list h5"> Categories</li>
+                <li class="list">Graphics & Design</li>
+                <li class="list">online-marketing</li>
+                <li class="list">writing-translation</li>
+                <li class="list"> video-animation </li>
+                <li class="list"> video-animation</li>
+                <li class="list"> Data</li>
+                <li class="list"> Lifestyle</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="list-group">
+                <li class="list h5"> About</li>
+                <li class="list">Careers</li>
+                <li class="list"> Press and News </li>
+                <li class="list">Partnerships </li>
+                <li class="list"> Privacy Policy </li>
+                <li class="list"> Terms Of Services</li>
+                <li class="list"> Investor Relations</li>
+                <li class="list"> Intellectual Property Claims
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="list-group">
+                <li class="list h5"> Support and Education </li>
+                <li class="list">Help & Support</li>
+                <li class="list"> Trust & Safety</li>
+                <li class="list">Selling on Fiverr</li>
+                <li class="list"> Buying on Fiverr</li>
+                <li class="list">Fiverr Guides </li>
+                <li class="list"> Learn</li>
+                <li class="list">
+                  Fiverr Workspace</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="list-group">
+                <li class="list h5"> Community </li>
+                <li class="list"> Forum </li>
+                <li class="list"> Events </li>
+                <li class="list">Blog</li>
+                <li class="list"> Influencers </li>
+                <li class="list"> Podcast </li>
+                <li class="list"> Invite a Friend</li>
+                <li class="list">Become a Seller</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="list-group">
+                <li class="list h5">About Business Solutions</li>
+                <li class="list"> Fiverr Pro</li>
+                <li class="list"> Fiverr Enterprise </li>
+                <li class="list">Working Not Working</li>
+                <li class="list"> programme </li>
+                <li class="list"> Fiverr Enterprise</li>
+                <li class="list"> Fiverr Certified </li>
+                <li class="list"> Contact Sales/li>
+              </ul>
+            </div>
+          </div>
+      </div>
+
+
+
+      <div class="mx-5">
+        <hr>
+        <div class="my-3">
+          <img width="100%" src="https://github.com/Fasiha-Mariyam/fiverr_clone/blob/main/images/footer.png?raw=true"
+            alt="">
+        </div>
+      </div>
+      </footer>
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
